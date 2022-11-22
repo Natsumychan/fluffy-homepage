@@ -1,4 +1,4 @@
-# Fluffy Hmepage
+# Fluffy Homepage
 
 This landing website is about my pet Fluffy.
 
