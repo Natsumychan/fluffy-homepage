@@ -32,6 +32,10 @@
    justify-content: space-between;
   }
 
+  nav.night{
+   background: grey;
+  }
+
   .nav-menu{
    font-size: 2rem;
   }
@@ -52,7 +56,7 @@
   .darkModeSwitch span{
     width:30px;
     height:30px;
-    line-height:35px;
+    line-height:37px;
     display:block;
     color:#fff;
     background: none;
@@ -91,7 +95,7 @@
  </style>
 </head>
 <body>
- <nav>
+ <nav class="">
  <div class="nav-menu">
   <a href="#about">About</a>             
   <a href="#work">My work</a>             
@@ -104,10 +108,13 @@
  </nav>
  <script>
   const switchButton = document.getElementById('switch');
+
+  const navBar=document.querySelector("nav")
  
  switchButton.addEventListener('click', () => {
     document.body.classList.toggle('dark'); 
     switchButton.classList.toggle('active');
+    navBar.classList.toggle('night')
  });
  </script>
 </body>
