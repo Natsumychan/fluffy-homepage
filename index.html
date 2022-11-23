@@ -7,6 +7,12 @@
  <title>FluffyPage</title>
  <script src="https://kit.fontawesome.com/21f020d864.js" crossorigin="anonymous"></script>
  <style>
+  *{
+   margin:0;
+   padding:0;
+   font-size:62.5%;
+  }
+
   body{
    background-image: url("./src/light-mode-back.jpg");
    background-size: cover;
@@ -17,8 +23,22 @@
    background-size: cover;
   }
 
+  nav{
+   display:flex;
+   width:100%;
+   height:40px;
+   background: pink;
+   align-items: center;
+   justify-content: space-between;
+  }
+
+  .nav-menu{
+   font-size: 2rem;
+  }
+
   .darkModeSwitch{
-    width: 70px;
+    width: 60px;
+    height:25px;
     background: #3494b1;
     display:flex;
     position: relative;
@@ -32,7 +52,7 @@
   .darkModeSwitch span{
     width:30px;
     height:30px;
-    line-height:30px;
+    line-height:35px;
     display:block;
     color:#fff;
     background: none;
@@ -41,8 +61,8 @@
  .darkModeSwitch::after{
     display:block;
     background: #fffbf5;
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
     position: absolute;
     top:0;
     right:0;
@@ -61,13 +81,22 @@
   left:0;
  }
 
+ .fa-moon-o{
+  color:black;
+ }
+
+ .fa{
+  font-size: 1.4rem;
+ }
  </style>
 </head>
 <body>
  <nav>
- <a href="#about">About</a>             
- <a href="#work">My work</a>             
- <a href="#contact">Contact</a>   
+ <div class="nav-menu">
+  <a href="#about">About</a>             
+  <a href="#work">My work</a>             
+  <a href="#contact">Contact</a>  
+ </div> 
  <button class="darkModeSwitch active" id="switch">
   <span><i class="fa fa-sun-o"></i></span>   
   <span><i class="fa fa-moon-o"></i></span>
